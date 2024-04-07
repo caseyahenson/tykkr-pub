@@ -1,4 +1,3 @@
 <?php
-header("Location: https://hub.tykkr.com/api/weather/89014", true, 302);
-exit();
+return json_decode(file_get_contents('https://hub.tykkr.com/api/weather/89014'));
 ?>
